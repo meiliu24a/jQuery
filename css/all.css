@@ -1,0 +1,498 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ================CSS Reset結束 =================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft Jhenghei";
+}
+
+h2,h3,h4 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    width: 1002px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 1002px;
+    z-index: 10;
+    background: #fff;
+}
+
+.banner,.intro,.lesson,.info {
+    margin-bottom: 64px;
+}
+
+.nav {
+    justify-content: flex-end;
+    padding: 8px 2px;
+    background: #f6f6f6;
+}
+
+.nav li {
+    padding: 0 10px;
+}
+
+/* .nav img {
+    margin-right: 4px;
+} */
+
+.nav a:hover {
+    opacity: .7;
+}
+
+.nav-facebook {
+    border-right: 1px solid #cbcbcb;
+}
+
+.nav-facebook a {
+    color: #3d649a;
+}
+
+.nav-twitter  a {
+    color: #0aacfa;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 a {
+    width: 170px;
+    height: 36px;
+    background: url(../images/logo-header.jpg);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+/* .navbar > ul > li > a {
+    color: #00d197;
+    padding: 16px 20px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.navbar > ul > li > a:hover {
+    border-bottom: 5px solid #00d197;
+} */
+
+.banner {
+    /* background: url(../images/banner.jpg); */
+    /* height: 346px; */
+    /* align-items: center; */
+    position: relative;
+    margin-top: 90px;
+}
+
+.banner h2 {
+    width: 100%;
+    line-height: 44px;
+    color: #fff;
+    padding: 36px 55px;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -80px;
+}
+
+.intro {
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.intro-item a {
+    padding: 24px 20px;
+    width: 300px;
+    height: 100%;
+    box-shadow: 0 4px 2px #dfdddd;
+    color: black;
+}
+
+.intro-item a:active {
+    color: #000
+}
+
+.intro-item a:hover {
+    box-shadow: 0 4px 2px #b1aeae;
+    opacity: .9;
+}
+
+.intro-img {
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h4 {
+    text-align: center;
+    line-height: 30px;
+}
+
+.intro p,.intro-item li {
+    line-height: 25px;
+}
+
+.intro-item ul {
+    list-style: disc;
+    margin-left: 16px;
+}
+
+.lesson h3,.info h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lesson table {
+    width: 824px;
+    margin: 0 auto;
+    text-align: left;
+    border: 0px;
+}
+
+.lesson th {
+    background: #f7f7f7;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #00af71;
+}
+
+.info {
+    background: linear-gradient(#00654a,#009972);
+    padding: 20px;
+    color: #fff;
+}
+
+.info h3 {
+    line-height: 40px;
+}
+
+.info form {
+    justify-content: space-between;
+}
+
+.info textarea ,.info-required input {
+    width: 462px;
+}
+
+.info-required input {
+    margin: 10px 0 !important; 
+}
+
+.info-required input:focus:invalid {
+    color: #000;
+    border-color: #129fea;
+}
+
+.info-required .submit {
+    float: right;
+    background: #00ce98;
+    color: #fff;
+    width: 72px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 4px;
+} 
+
+.info-required .submit:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.footer {
+    justify-content: flex-end;
+    padding: 15px;
+    background: url(../images/logo-footer.png) no-repeat 15px center;
+}
+
+.contact li {
+    line-height: 25px;
+}
+
+.contact a {
+    color: #d63470;
+    display: inline-block;
+}
+
+.contact a:hover {
+    opacity: .7;
+}
+
+
+/* ============== 以上為最後一版作業 ==============*/
+
+
+
+/* ==============以下新增為 jQuery 作業 =========== */
+
+/* navbar folder-1 */
+
+.navbar .folder-1 {
+    margin-right: 5px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar > li i {
+    margin-left: 5px;
+}
+
+.navbar .folder-1 > li.active > a:first-child i {
+    color: #00251a;
+}
+
+.navbar .folder-1 > li > a:first-child {
+    color: #00d197;
+    padding: 16px 15px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.navbar .folder-1 > li:nth-child(2) > a:first-child {
+    padding: 16px 29px;
+}
+
+.navbar .folder-1 > li.active > a:first-child {
+    border-bottom: 5px solid #00d197;
+}
+
+.navbar .folder-1 ul {
+    display: none;
+}
+
+
+/* folder-2 */
+.navbar .folder-2 {
+    position: absolute;
+    top: 58px;
+    width: 100%;
+}
+
+.navbar .folder-2 li {
+    border-bottom: 2px solid #fff;
+    background: #00251a;
+}
+
+.navbar .folder-2 > li.active > a {
+    color: #00d197;
+}
+
+.navbar .folder-2 li a:hover {
+    opacity: .7;
+}
+
+.navbar .folder-2 > li.active > a:hover {
+    opacity: 1;
+}
+
+.navbar .folder-2 li a {
+    padding: 10px 10px 10px 20px;
+    color: #fff;
+}
+
+.navbar .folder-2 > li > a > i {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fas.fa-minus {
+    display: none;
+}
+
+li.active .animate__animated.animate__wobble {
+    animation-iteration-count: infinite;
+}
+
+/* folder-3 */
+.navbar .folder-3 {
+    width: 268px;
+    position: absolute;
+    left: 142px;
+    top: -2px;
+    border-top: 2px solid #fff;
+    overflow: hidden;
+}
+
+.navbar .folder-3 i {
+    margin-left: 0;
+    transform: translateX(-34px);
+    transition: all 0.5s;
+}
+
+.navbar .folder-3 span {
+    display: inline-block;
+    transform: translateX(-14px);
+    transition: all 0.5s;
+}
+
+.navbar .folder-3 li.active i {
+    transform: translateX(-10px);
+}
+
+.navbar .folder-3 li.active span {
+    transform: translateX(0px);
+}
+
+/* banner swiper */
+.swiper-container {
+    width: 1002px;
+    height: 560px;
+}
+
+.swiper-container img {
+    width: 100%;
+    height: 560px;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background: #007aff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    opacity: 1;
+}
+
+/* btn */
+
+.btn {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    margin-top: -90px;
+    align-items: center;
+    z-index: 10;
+}
+
+.btn a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 36px;
+    color: #00251a;
+    background: #00d197;
+    text-align: center;
+}
+
+.btn a:nth-child(2) {
+    color: #00d197;
+    background: #00251a;
+}
+
+.btn a:hover ,.top:hover{
+    opacity: .8;
+}
+
+.top {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5%;
+    right: 3.5%;
+    z-index: 10;
+    color: #fff;
+    background: #00251a;
+    font-size: 30px;
+}
